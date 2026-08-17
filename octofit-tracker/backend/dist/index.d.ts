@@ -1,4 +1,2 @@
-declare const app: import("express-serve-static-core").Express;
-export declare function getApiBaseUrl(): string;
-export default app;
+export { default, getApiBaseUrl, startServer } from './server.js';
 //# sourceMappingURL=index.d.ts.map
