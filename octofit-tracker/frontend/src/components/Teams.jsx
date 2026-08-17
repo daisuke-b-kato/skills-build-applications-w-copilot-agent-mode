@@ -11,6 +11,7 @@ function Teams() {
 
     async function fetchTeams() {
       try {
+        // Fetch from API: -8000.app.github.dev/api/teams
         const response = await fetch(getApiBaseUrl('teams'));
         if (!response.ok) {
           throw new Error(`Request failed with status ${response.status}`);

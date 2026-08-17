@@ -11,6 +11,7 @@ function Leaderboard() {
 
     async function fetchLeaderboard() {
       try {
+        // Fetch from API: -8000.app.github.dev/api/leaderboard
         const response = await fetch(getApiBaseUrl('leaderboard'));
         if (!response.ok) {
           throw new Error(`Request failed with status ${response.status}`);

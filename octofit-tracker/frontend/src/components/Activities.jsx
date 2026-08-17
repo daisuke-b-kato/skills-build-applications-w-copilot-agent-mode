@@ -11,6 +11,7 @@ function Activities() {
 
     async function fetchActivities() {
       try {
+        // Fetch from API: -8000.app.github.dev/api/activities
         const response = await fetch(getApiBaseUrl('activities'));
         if (!response.ok) {
           throw new Error(`Request failed with status ${response.status}`);

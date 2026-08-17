@@ -11,6 +11,7 @@ function Users() {
 
     async function fetchUsers() {
       try {
+        // Fetch from API: -8000.app.github.dev/api/users
         const response = await fetch(getApiBaseUrl('users'));
         if (!response.ok) {
           throw new Error(`Request failed with status ${response.status}`);

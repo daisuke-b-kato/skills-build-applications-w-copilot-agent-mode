@@ -11,6 +11,7 @@ function Workouts() {
 
     async function fetchWorkouts() {
       try {
+        // Fetch from API: -8000.app.github.dev/api/workouts
         const response = await fetch(getApiBaseUrl('workouts'));
         if (!response.ok) {
           throw new Error(`Request failed with status ${response.status}`);
